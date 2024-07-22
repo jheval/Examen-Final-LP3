@@ -1,0 +1,15 @@
+
+    <h2> Examen Final (LP3 - 2024) | Valdivieso Sánchez, Jheremy </h2>
+    <hr/>
+    
+
+    <h1>Pagina de personas</h1>
+
+    <ul>
+      {% for persona in personas %}
+      <li>
+          {{ persona.id }} {{ persona.nombre }} {{ persona.apellidos }} ({{ persona.sexo }})
+          ({{ persona.fecha_de_registro }})
+      </li>
+      {% endfor %}
+    </ul>
